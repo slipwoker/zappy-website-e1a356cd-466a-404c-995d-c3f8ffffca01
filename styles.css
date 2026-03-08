@@ -176,9 +176,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-}
-
-body {
+}html[dir="ltr"]{
   font-family: 'Inter', sans-serif;
   font-size: 16px !important;
   line-height: 1.7 !important;
@@ -1090,46 +1088,28 @@ html[lang="fr"] .nav-cta-container {
 /* ============================================
    RTL DESKTOP LAYOUT (Hebrew, Arabic)
    ============================================ */
-html[dir="rtl"] .nav-container,
+.nav-container,
 html[lang="he"] .nav-container,
-html[lang="ar"] .nav-container {
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
+html[lang="ar"] .nav-container{flex-direction: row-reverse;justify-content: space-between;}
 
 /* CTA on the left in RTL */
-html[dir="rtl"] .nav-cta-container,
+.nav-cta-container,
 html[lang="he"] .nav-cta-container,
-html[lang="ar"] .nav-cta-container {
-  order: -1;
-  margin: 0;
-}
+html[lang="ar"] .nav-cta-container{order: -1;margin: 0;}
 
 /* Wrapper groups menu and logo together on the right */
-html[dir="rtl"] .nav-right-group,
+.nav-right-group,
 html[lang="he"] .nav-right-group,
-html[lang="ar"] .nav-right-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  order: 1;
-  flex: 1;
-  min-width: 0;
-  flex-direction: row-reverse;
-}
+html[lang="ar"] .nav-right-group{display: flex;align-items: center;gap: 1rem;order: 1;flex: 1;min-width: 0;flex-direction: row-reverse;}
 
 /* Within wrapper: Logo on far right, menu to its left */
-html[dir="rtl"] .nav-right-group .nav-brand,
+.nav-right-group .nav-brand,
 html[lang="he"] .nav-right-group .nav-brand,
-html[lang="ar"] .nav-right-group .nav-brand {
-  order: 2;
-}
+html[lang="ar"] .nav-right-group .nav-brand{order: 2;}
 
-html[dir="rtl"] .nav-right-group .nav-menu,
+.nav-right-group .nav-menu,
 html[lang="he"] .nav-right-group .nav-menu,
-html[lang="ar"] .nav-right-group .nav-menu {
-  order: 1;
-}
+html[lang="ar"] .nav-right-group .nav-menu{order: 1;}
 
 /* ============================================
    DROPDOWN MENUS (Desktop)
@@ -1188,12 +1168,9 @@ html[lang="ar"] .nav-right-group .nav-menu {
   margin: 0;
 }
 
-html[dir="rtl"] .dropdown-menu,
+.dropdown-menu,
 html[lang="he"] .dropdown-menu,
-html[lang="ar"] .dropdown-menu {
-  right: 0;
-  left: auto;
-}
+html[lang="ar"] .dropdown-menu{right: 0;left: auto;}
 
 html[dir="ltr"] .dropdown-menu,
 html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
@@ -1362,20 +1339,12 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
      which breaks AI centering hacks (top:50% + margin-top:-Npx).
      Use explicit left/right + transform for robust vertical centering. */
   .nav-brand,
-  html[dir="rtl"] .nav-brand,
+  .nav-brand,
   html[lang="he"] .nav-brand,
   html[lang="ar"] .nav-brand,
   html[dir="rtl"] .nav-right-group .nav-brand,
   html[lang="he"] .nav-right-group .nav-brand,
-  html[lang="ar"] .nav-right-group .nav-brand {
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0 !important;
-    text-align: center;
-    order: 0 !important;
-  }
+  html[lang="ar"] .nav-right-group .nav-brand{position: absolute !important;left: 50% !important;top: 50% !important;transform: translate(-50%, -50%) !important;margin: 0 !important;text-align: center;order: 0 !important;}
   
   /* Mobile logo size: fixed at 35px/110px — do not adjust, especially for e-commerce/catalog sites */
   .logo {
@@ -1486,11 +1455,9 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
     font-size: 0.9em;
   }
   
-  html[dir="rtl"] .dropdown-menu li a,
+  .dropdown-menu li a,
   html[lang="he"] .dropdown-menu li a,
-  html[lang="ar"] .dropdown-menu li a {
-    padding: 12px 50px 12px 30px !important;
-  }
+  html[lang="ar"] .dropdown-menu li a{padding: 12px 50px 12px 30px !important;}
 
   /* Mobile submenu links: use nav panel text color instead of desktop submenu color.
      Desktop submenu uses light bg + dark text, but mobile submenu is inline (transparent)
@@ -1595,32 +1562,21 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
    Uses !important to override any inline styles
    ============================================ */
 @media (max-width: 768px) {
-  html[dir="rtl"] .mobile-toggle,
+  .mobile-toggle,
   html[lang="he"] .mobile-toggle,
-  html[lang="ar"] .mobile-toggle {
-    left: auto !important;
-    right: 12px !important;
-  }
+  html[lang="ar"] .mobile-toggle{left: auto !important;right: 12px !important;}
   
-  html[dir="rtl"] .phone-header-btn,
+  .phone-header-btn,
   html[lang="he"] .phone-header-btn,
-  html[lang="ar"] .phone-header-btn {
-    left: 12px !important;
-    right: auto !important;
-  }
+  html[lang="ar"] .phone-header-btn{left: 12px !important;right: auto !important;}
   
-  html[dir="rtl"] .nav-menu,
+  .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    right: 0 !important;
-    left: auto !important;
-  }
+  html[lang="ar"] .nav-menu{right: 0 !important;left: auto !important;}
   
-  html[dir="rtl"] .nav-menu a,
+  .nav-menu a,
   html[lang="he"] .nav-menu a,
-  html[lang="ar"] .nav-menu a {
-    text-align: right !important;
-  }
+  html[lang="ar"] .nav-menu a{text-align: right !important;}
   
   /* Hide desktop language switcher on mobile - hamburger menu handles it */
   /* High specificity to override stored CSS */
@@ -1678,37 +1634,28 @@ nav.navbar {
 
 /* RTL layout for cloned sites (without nav-right-group) */
 /* Base RTL styles - apply to all screens */
-html[dir="rtl"] .nav-container,
+.nav-container,
 html[lang="he"] .nav-container,
-html[lang="ar"] .nav-container {
-  justify-content: space-between !important;
-}
+html[lang="ar"] .nav-container{justify-content: space-between !important;}
 
 /* Logo stays on right in RTL - DESKTOP ONLY */
 /* On mobile, logo should be centered (handled by mobile media query) */
 @media (min-width: 769px) {
-  html[dir="rtl"] .nav-brand,
+  .nav-brand,
   html[dir="rtl"] .logo-link,
   html[lang="he"] .nav-brand,
   html[lang="he"] .logo-link,
   html[lang="ar"] .nav-brand,
-  html[lang="ar"] .logo-link {
-    order: 2 !important;
-    margin-left: 1.5rem !important;
-  }
+  html[lang="ar"] .logo-link{order: 2 !important;margin-left: 1.5rem !important;}
 }
 
 /* Base RTL nav-menu styles - display:flex but NOT flex-direction (that's desktop-only) */
-html[dir="rtl"] .nav-menu,
+.nav-menu,
 html[lang="he"] .nav-menu,
-html[lang="ar"] .nav-menu {
-  order: 1 !important;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
+html[lang="ar"] .nav-menu{order: 1 !important;margin-right: 0 !important;margin-left: 0 !important;}
 
 /* CTA button pushed to far left in RTL */
-html[dir="rtl"] .cta-button,
+.cta-button,
 html[dir="rtl"] a.cta-button,
 html[dir="rtl"] .nav-cta-btn,
 html[lang="he"] .cta-button,
@@ -1716,35 +1663,22 @@ html[lang="he"] a.cta-button,
 html[lang="he"] .nav-cta-btn,
 html[lang="ar"] .cta-button,
 html[lang="ar"] a.cta-button,
-html[lang="ar"] .nav-cta-btn {
-  order: 0 !important;
-  margin-right: auto !important;
-  margin-left: 0 !important;
-}
+html[lang="ar"] .nav-cta-btn{order: 0 !important;margin-right: auto !important;margin-left: 0 !important;}
 
 /* DESKTOP ONLY: Horizontal flex layout for RTL navbar - prevents breaking mobile vertical menu */
 @media (min-width: 769px) {
-  html[dir="rtl"] .nav-container,
+  .nav-container,
   html[lang="he"] .nav-container,
-  html[lang="ar"] .nav-container {
-    flex-direction: row-reverse !important;
-  }
+  html[lang="ar"] .nav-container{flex-direction: row-reverse !important;}
   
-  html[dir="rtl"] .nav-menu,
+  .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 1.5rem !important;
-    /* flex:1 ensures menu fills space between brand and CTA so items
+  html[lang="ar"] .nav-menu{display: flex !important;flex-direction: row !important;align-items: center !important;gap: 1.5rem !important;/* flex:1 ensures menu fills space between brand and CTA so items
        stay adjacent to the logo instead of centering when the
        .nav-right-group wrapper is absent (cloned sites, etc.).
        justify-content: flex-start pushes items toward the logo
        (in RTL, flex-start = right side, adjacent to the brand). */
-    flex: 1 !important;
-    justify-content: flex-start !important;
-  }
+    flex: 1 !important;justify-content: flex-start !important;}
 }
 
 /* ============================================
@@ -4224,12 +4158,11 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
-/* NOTE: Includes both html[dir="rtl"] AND [dir="rtl"] selectors as fallback */
+/* NOTE: Includes both AND [dir="rtl"] selectors as fallback */
 /* because some pages may be wrapped with <html lang="en"> (missing dir="rtl" on html) */
 /* but still have dir="rtl" on <body> or other ancestor elements */
 
-@media (max-width: 768px) {
-  /* RTL Mobile Toggle (hamburger) - positioned on RIGHT */
+@media (max-width: 768px){/* RTL Mobile Toggle (hamburger) - positioned on RIGHT */
   /* Using multiple parent selectors for higher specificity */
   html[dir="rtl"] .navbar .mobile-toggle,
   html[dir="rtl"] nav .mobile-toggle,
@@ -4243,12 +4176,10 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   [dir="rtl"] .mobile-toggle,
   html[lang="he"] .mobile-toggle,
   html[lang="ar"] .mobile-toggle {
-    left: auto !important;
-    right: 15px !important;
-  }
+    left: auto !important;right: 15px !important;}
   
   /* RTL Phone Button - positioned on LEFT */
-  html[dir="rtl"] .navbar .phone-header-btn,
+  .navbar .phone-header-btn,
   html[dir="rtl"] nav .phone-header-btn,
   html[dir="rtl"] header .phone-header-btn,
   html[dir="rtl"] .nav-container .phone-header-btn,
@@ -4259,13 +4190,10 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   [dir="rtl"] .nav-container .phone-header-btn,
   [dir="rtl"] .phone-header-btn,
   html[lang="he"] .phone-header-btn,
-  html[lang="ar"] .phone-header-btn {
-    left: 15px !important;
-    right: auto !important;
-  }
+  html[lang="ar"] .phone-header-btn{left: 15px !important;right: auto !important;}
   
   /* RTL Mobile Menu - slides from RIGHT */
-  html[dir="rtl"] .navbar .nav-menu,
+  .navbar .nav-menu,
   html[dir="rtl"] nav .nav-menu,
   html[dir="rtl"] header .nav-menu,
   html[dir="rtl"] .nav-container .nav-menu,
@@ -4276,22 +4204,17 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   [dir="rtl"] .nav-container .nav-menu,
   [dir="rtl"] .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    left: auto !important;
-    right: 0 !important;
-  }
+  html[lang="ar"] .nav-menu{left: auto !important;right: 0 !important;}
   
   /* RTL Mobile Menu Links - text align right */
-  html[dir="rtl"] .nav-menu a,
+  .nav-menu a,
   html[dir="rtl"] .nav-menu li,
   [dir="rtl"] .nav-menu a,
   [dir="rtl"] .nav-menu li,
   html[lang="he"] .nav-menu a,
   html[lang="he"] .nav-menu li,
   html[lang="ar"] .nav-menu a,
-  html[lang="ar"] .nav-menu li {
-    text-align: right !important;
-  }
+  html[lang="ar"] .nav-menu li{text-align: right !important;}
 }
 
 /* ========== END RTL MOBILE NAVBAR FIX ========== */
