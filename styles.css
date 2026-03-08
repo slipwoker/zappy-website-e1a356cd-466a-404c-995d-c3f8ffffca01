@@ -3827,6 +3827,194 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (Home-services)
+   Added: 2026-03-08T18:06:49.962Z
+   ═══════════════════════════════════════════════════════════ */
+.home-services-section {
+  background: #F6F6F6;
+  color: var(--text-dark);
+  position: relative;
+  padding: 80px 16px 100px;
+  overflow: visible;
+}
+
+.home-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-services-intro {
+  max-width: 720px;
+  margin: 0 0 60px 0;
+}
+
+.home-services-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.home-services-eyebrow-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.home-services-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.home-services-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+}
+
+.home-services-description {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.home-services-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 0;
+  padding: 28px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  transition: all 0.3s ease;
+}
+
+.home-services-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+  transform: translateY(-2px);
+}
+
+.home-services-card-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.home-services-card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.home-services-card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-dark);
+  margin: 0 0 14px 0;
+}
+
+.home-services-card-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 auto 0;
+  flex-grow: 1;
+}
+
+.home-services-card-link {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--primary);
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.home-services-card-link:hover {
+  color: var(--accent);
+}
+
+.home-services-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.home-services-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-services-section {
+    padding: 60px 16px 80px;
+  }
+  
+  .home-services-intro {
+    margin-bottom: 40px;
+  }
+  
+  .home-services-title {
+    font-size: 24px;
+  }
+  
+  .home-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  
+  .home-services-card {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+  
+  .home-services-card-icon {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 16px;
+  }
+  
+  .home-services-card-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */

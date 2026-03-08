@@ -242,6 +242,193 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.home-services-section {
+  background: #F6F6F6;
+  color: var(--text-dark);
+  position: relative;
+  padding: 80px 16px 100px;
+  overflow: visible;
+}
+
+.home-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-services-intro {
+  max-width: 720px;
+  margin: 0 0 60px 0;
+}
+
+.home-services-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.home-services-eyebrow-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.home-services-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.home-services-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+}
+
+.home-services-description {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.home-services-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 0;
+  padding: 28px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  transition: all 0.3s ease;
+}
+
+.home-services-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+  transform: translateY(-2px);
+}
+
+.home-services-card-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.home-services-card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.home-services-card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-dark);
+  margin: 0 0 14px 0;
+}
+
+.home-services-card-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 auto 0;
+  flex-grow: 1;
+}
+
+.home-services-card-link {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--primary);
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.home-services-card-link:hover {
+  color: var(--accent);
+}
+
+.home-services-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.home-services-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-services-section {
+    padding: 60px 16px 80px;
+  }
+  
+  .home-services-intro {
+    margin-bottom: 40px;
+  }
+  
+  .home-services-title {
+    font-size: 24px;
+  }
+  
+  .home-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  
+  .home-services-card {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+  
+  .home-services-card-icon {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 16px;
+  }
+  
+  .home-services-card-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -799,86 +986,101 @@
   </div>
 </section>
 
-<section id="services" class="home-services-section" data-layout-spec="Home-services">
+<section class="home-services-section" data-layout-spec="Home-services" data-zappy-section="true" id="services">
   <div class="home-services-container">
     <div class="home-services-intro">
-      <h2>Family law services with clarity and care.</h2>
-      <p>Focused representation that balances empathy with decisive legal strategy.</p>
+      <div class="home-services-eyebrow">
+        <span class="home-services-eyebrow-text">Our Practice Areas</span>
+        <div class="home-services-eyebrow-line"></div>
+      </div>
+      <h2 class="home-services-title">Family law services with clarity and care.</h2>
+      <p class="home-services-description">Focused representation that balances empathy with decisive legal strategy.</p>
     </div>
     
     <div class="home-services-grid">
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 8V20L26 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"></circle>
-        </svg>
-        <h3>Divorce &amp; separation</h3>
-        <p>Compassionate guidance through dissolution proceedings with clear timelines and strategic planning for your future.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <line x1="12" y1="5.67" x2="12" y2="21.23"></line>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Divorce &amp; separation</h3>
+        <p class="home-services-card-text">Compassionate guidance through dissolution proceedings with clear timelines and strategic planning for your future.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
       
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 12C20 12 16 16 16 20C16 22.21 17.79 24 20 24C22.21 24 24 22.21 24 20C24 16 20 12 20 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M12 28C12 26.67 14.69 24 20 24C25.31 24 28 26.67 28 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg>
-        <h3>Child custody &amp; parenting plans</h3>
-        <p>Protecting children's best interests while establishing fair, workable arrangements that prioritize stability.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Child custody &amp; parenting plans</h3>
+        <p class="home-services-card-text">Protecting children's best interests while establishing fair, workable arrangements that prioritize stability.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
       
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="12" width="20" height="16" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
-          <path d="M10 18H30" stroke="currentColor" stroke-width="1.5"></path>
-          <path d="M16 12V10C16 8.89 16.89 8 18 8H22C23.11 8 24 8.89 24 10V12" stroke="currentColor" stroke-width="1.5"></path>
-        </svg>
-        <h3>Support &amp; financial arrangements</h3>
-        <p>Transparent analysis of assets, income, and obligations to secure equitable financial outcomes.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Support &amp; financial arrangements</h3>
+        <p class="home-services-card-text">Transparent analysis of assets, income, and obligations to secure equitable financial outcomes.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
       
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 28V14C12 12.89 12.89 12 14 12H26C27.11 12 28 12.89 28 14V28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M16 22H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M16 18H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M20 28V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg>
-        <h3>Prenuptial and postnuptial agreements</h3>
-        <p>Thoughtful contracts that protect both parties while preserving trust and clarity before or during marriage.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Prenuptial and postnuptial agreements</h3>
+        <p class="home-services-card-text">Thoughtful contracts that protect both parties while preserving trust and clarity before or during marriage.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
       
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"></circle>
-          <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"></circle>
-          <path d="M21 18L19 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg>
-        <h3>Mediation support</h3>
-        <p>Collaborative resolution strategies that reduce conflict, preserve relationships, and achieve mutual agreement.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <line x1="9" y1="10" x2="15" y2="10"></line>
+            <line x1="12" y1="7" x2="12" y2="13"></line>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Mediation support</h3>
+        <p class="home-services-card-text">Collaborative resolution strategies that reduce conflict, preserve relationships, and achieve mutual agreement.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
       
-      <div class="home-services-card">
-        <svg data-element-type="icon" data-icon-type="svg" class="home-services-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="12" y="10" width="16" height="20" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
-          <path d="M16 16H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M16 20H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M16 24H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M20 6L20 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg>
-        <h3>Court representation and enforcement</h3>
-        <p>Decisive advocacy in litigation and post-judgment enforcement to protect your legal rights and agreements.</p>
-        <a href="#contact" class="home-services-link">Speak with a lawyer</a>
-      </div>
+      <article class="home-services-card">
+        <div class="home-services-card-icon" data-element-type="icon" data-icon-type="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h3 class="home-services-card-title">Court representation and enforcement</h3>
+        <p class="home-services-card-text">Decisive advocacy in litigation and post-judgment enforcement to protect your legal rights and agreements.</p>
+        <a href="#contact" class="home-services-card-link">Speak with a lawyer →</a>
+      </article>
     </div>
   </div>
   
   <div class="home-services-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 4" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,4 L0,0 L200,0 L200,2 L400,2 L400,0 L600,0 L600,2 L800,2 L800,0 L1000,0 L1000,2 L1200,2 L1200,4 Z" fill="var(--primary)"></path>
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 20" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,20 L0,10 L200,10 L220,12 L240,10 L440,10 L460,12 L480,10 L680,10 L700,12 L720,10 L920,10 L940,12 L960,10 L1200,10 L1200,20 Z" fill="#FFFFFF"></path>
     </svg>
   </div>
 </section>
@@ -1220,10 +1422,10 @@
   <div class="home-process-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="home-process-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+        <linearGradient id="home-process-fade" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style="stop-color:#E5E5E5;stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:#FFFFFF;stop-"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <path d="M0,60 L0,0 L1200,0 L1200,60 Z" fill="var(--bg-dark)"></path>
       <line x1="0" y1="1" x2="1200" y2="1" stroke="#D9D9D9" stroke-width="1"></line>
