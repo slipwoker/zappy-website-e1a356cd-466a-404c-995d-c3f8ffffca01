@@ -889,7 +889,7 @@ html[dir="rtl"] body {
       .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
       /* Submenu item styling */
       .sub-menu li { list-style: none; margin: 0; padding: 0; }
-      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: var(--text-dark, #333) !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
       .sub-menu a:hover { background-color: #f5f5f5; }
       /* RTL (Hebrew/Arabic) dropdown positioning */
       [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
@@ -960,16 +960,16 @@ html[dir="rtl"] body {
 
     <nav class="navbar scrolled" style="background-color: rgba(245, 247, 249, 0.85) !important; backdrop-filter: blur(12px); box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 16px; --frosted-text: #1a2238; background-image: none !important;">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" style="color: rgb(26, 34, 56) !important;" data-element-type="button" data-element-id="btn-1772993475657-tr9yc3ve6" data-native-element="true">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="width: 24px !important; height: 24px !important; display: block !important;">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="width: 24px !important; height: 24px !important; display: block !important;">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none !important; width: 24px !important; height: 24px !important;">
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none !important; width: 24px !important; height: 24px !important;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call" style="color: rgb(26, 34, 56) !important;" data-element-type="button" data-element-id="btn-1772993475657-tb61u810b" data-native-element="true">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -986,7 +986,7 @@ html[dir="rtl"] body {
     
 <div class="lang-switcher" data-no-icon-edit="true" data-icon-color="#ffffff" style="position:relative;display:inline-flex;align-items:center;z-index:1000;margin:0 4px;">
   <button class="lang-switcher-current" aria-haspopup="true" aria-expanded="false" data-no-icon-edit="true" style="display:flex;align-items:center;padding:8px;background:transparent;border:none;border-radius:6px;cursor:pointer;color:#ffffff;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="#ffffff" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
   </button>
   <div class="lang-switcher-dropdown" role="menu" style="position:absolute;top:100%;right:0;margin-top:4px;min-width:140px;background:white;border:1px solid rgba(128,128,128,0.2);border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s ease;z-index:1001;">
     <button class="lang-option" data-lang="he" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;background:none;border:none;text-align:left;cursor:pointer;font-size:14px;color:#333;"><img src="https://api.iconify.design/circle-flags/il.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:middle;border-radius:50%;"> עברית</button>
@@ -1075,7 +1075,7 @@ html[dir="rtl"] body {
             <ul>
                 <li data-i18n="accessibility_li_59"><strong>Company:</strong> Maors Lawfirm</li>
                 <li data-i18n="accessibility_li_60"><strong>Email:</strong> <a href="mailto:info@company.com" data-i18n="accessibility_link_22">info@company.com</a></li>
-                <li data-i18n="accessibility_li_61"><strong>Phone:</strong> <a href="tel:03-1234567">03-1234567</a></li>
+                <li data-i18n="accessibility_li_61"><strong>Phone:</strong> <a href="tel:0543951940">0543951940</a></li>
             </ul>
             <p data-i18n="accessibility_p_18">
                 <strong>Response time:</strong> We respond to accessibility inquiries within 3 business days and work to resolve issues within 10 business days.
@@ -1117,7 +1117,7 @@ html[dir="rtl"] body {
             <a href="tel:0543951940" data-i18n="accessibility_link_30">0543951940</a>
           </li>
           <li data-i18n="accessibility_li_70"><a href="/" data-i18n="accessibility_link_31"><i class="fas fa-map-marker-alt"></i>
-            <span data-i18n="accessibility_span_21">yael rom 5, Petah Tikva, 4906215, Israel</span></a></li>
+            <span data-i18n="accessibility_span_21">yael rom 5, Petah Tikva a, 4906215, Israel</span></a></li>
         </ul>
       </div>
       
@@ -1147,6 +1147,8 @@ html[dir="rtl"] body {
   </div>
 </footer>
     <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 <!-- i18next Multi-Language Support -->
@@ -1194,9 +1196,9 @@ html[dir="rtl"] body {
       "home_p_52": "Together we outline a clear roadmap and identify the documents needed to support your case.",
       "home_p_53": "We work toward fair agreements through skilled negotiation and collaborative problem-solving.",
       "home_p_54": "If litigation becomes necessary, we advocate for you with thorough preparation and steady resolve.",
-      "home_p_55": "Bring key dates, any existing agreements, and your main concerns—we will guide you from there.",
+      "home_p_55": "<small>Bring key dates, any existing agreements, and your main concerns—we will guide you from there.</small>",
       "home_p_56": "Share the basics and we will respond with clear next steps.",
-      "home_p_57": "Please do not include highly sensitive information. Submitting this form does not create an attorney-client relationship.",
+      "home_p_57": "<small>Please do not include highly sensitive information. Submitting this form does not create an attorney-client relationship.</small>",
       "home_p_58": "Trusted legal expertise for your peace of mind.",
       "home_p_59": "© 2026 Maors Lawfirm. All rights reserved.",
       "home_h3_10": "Calm advocacy",
@@ -1224,9 +1226,9 @@ html[dir="rtl"] body {
       "home_li_93": "Trust Signals",
       "home_li_94": "Process",
       "home_li_95": "Contact",
-      "home_li_96": "[business_email]",
+      "home_li_96": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"home_link_75\">maor.sharon@gmail.com</a>",
       "home_li_97": "[business_phone]",
-      "home_li_98": "[business_address]",
+      "home_li_98": "<a href=\"/\" data-i18n=\"home_link_77\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"home_span_66\">yael rom 5, Petah Tikva a, 4906215, Israel</span></a>",
       "home_li_99": "Privacy Policy",
       "terms_h1_1": "Terms of Use",
       "terms_h2_2": "1. Definitions",
@@ -1250,7 +1252,7 @@ html[dir="rtl"] body {
       "terms_p_28": "Trusted legal expertise for your peace of mind.",
       "terms_p_29": "© 2026 Maors Lawfirm. All rights reserved.",
       "home_btn_82": "Send message",
-      "home_li_100": "Terms & Conditions",
+      "home_li_100": "Terms &amp; Conditions",
       "home_li_101": "Accessibility",
       "terms_h2_10": "9. Changes to Terms of Use",
       "terms_h2_11": "10. Service Termination",
@@ -1260,9 +1262,9 @@ html[dir="rtl"] body {
       "terms_h3_15": "Quick Links",
       "terms_h3_16": "Contact Us",
       "terms_h3_17": "Follow Us",
-      "terms_li_45": "\"Company\" - Maors Lawfirm",
-      "terms_li_46": "\"User\" - Anyone who browses or uses the site",
-      "terms_li_47": "\"Services\" - legal services provided through the site",
+      "terms_li_45": "<strong>\"Company\"</strong> - Maors Lawfirm",
+      "terms_li_46": "<strong>\"User\"</strong> - Anyone who browses or uses the site",
+      "terms_li_47": "<strong>\"Services\"</strong> - legal services provided through the site",
       "terms_li_48": "Use of the site for lawful purposes only",
       "terms_li_49": "No interference with site operations or other users",
       "terms_li_50": "No uploading of offensive, illegal, or harmful content",
@@ -1279,21 +1281,21 @@ html[dir="rtl"] body {
       "terms_li_61": "If any portion of the terms is found invalid, remaining terms will remain in effect",
       "terms_li_62": "Non-enforcement of a right will not be considered a waiver",
       "terms_li_63": "These terms of use constitute the entire agreement between the parties",
-      "terms_li_64": "Company: Maors Lawfirm",
-      "terms_li_65": "Email: info@company.com",
-      "terms_li_66": "Phone: 03-1234567",
-      "terms_li_67": "Address: כתובת החברה, ישראל",
+      "terms_li_64": "<strong>Company:</strong> Maors Lawfirm",
+      "terms_li_65": "<strong>Email:</strong> <a href=\"mailto:info@company.com\" data-i18n=\"terms_link_31\">info@company.com</a>",
+      "terms_li_66": "<strong>Phone:</strong> <a href=\"tel:0543951940\">0543951940</a>",
+      "terms_li_67": "<strong>Address:</strong> כתובת החברה, ישראל",
       "terms_li_68": "Services",
       "terms_li_69": "Value Proposition",
       "terms_li_70": "Testimonials",
       "terms_li_71": "Trust Signals",
       "terms_li_72": "Process",
       "terms_li_73": "Contact",
-      "terms_li_74": "[business_email]",
+      "terms_li_74": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"terms_link_38\">maor.sharon@gmail.com</a>",
       "terms_li_75": "[business_phone]",
-      "terms_li_76": "[business_address]",
+      "terms_li_76": "<a href=\"/\" data-i18n=\"terms_link_40\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"terms_span_30\">yael rom 5, Petah Tikva a, 4906215, Israel</span></a>",
       "terms_li_77": "Privacy Policy",
-      "terms_li_78": "Terms & Conditions",
+      "terms_li_78": "Terms &amp; Conditions",
       "terms_li_79": "Accessibility",
       "home_alt_108": "Maors Lawfirm",
       "home_alt_109": "Modern law office interior with natural lighting",
@@ -1308,11 +1310,11 @@ html[dir="rtl"] body {
       "home_link_72": "Trust Signals",
       "home_link_73": "Process",
       "home_link_74": "Contact",
-      "home_link_75": "[business_email]",
+      "home_link_75": "maor.sharon@gmail.com",
       "home_link_76": "[business_phone]",
-      "home_link_77": "[business_address]",
+      "home_link_77": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"home_span_66\">yael rom 5, Petah Tikva a, 4906215, Israel</span>",
       "home_link_78": "Privacy Policy",
-      "home_link_79": "Terms & Conditions",
+      "home_link_79": "Terms &amp; Conditions",
       "home_link_80": "Accessibility",
       "home_link_81": "Generated by Zappy",
       "home_nav_102": "Duplicate",
@@ -1327,7 +1329,7 @@ html[dir="rtl"] body {
       "home_span_63": "Discreet communication",
       "home_span_64": "Clear expectations",
       "home_span_65": "Compassionate, firm representation",
-      "home_span_66": "[business_address]",
+      "home_span_66": "yael rom 5, Petah Tikva a, 4906215, Israel",
       "privacy_h1_1": "Privacy Policy",
       "privacy_h2_2": "1. Information Collection",
       "privacy_h2_3": "2. Use of Information",
@@ -1346,12 +1348,12 @@ html[dir="rtl"] body {
       "privacy_p_19": "We implement reasonable security measures to protect your information, including encryption, firewalls and restricted access control. \n            However, no transmission or storage method is 100% secure.",
       "privacy_p_20": "We may update this privacy policy from time to time. Material changes will be posted on the website with 30 days advance notice.",
       "privacy_p_21": "For questions or requests regarding this privacy policy, please contact us:",
-      "privacy_p_22": "Data Protection Authority: For complaints, you may contact the Data Protection Authority at the Ministry of Justice",
+      "privacy_p_22": "<strong>Data Protection Authority:</strong> For complaints, you may contact the Data Protection Authority at the Ministry of Justice",
       "privacy_p_23": "Trusted legal expertise for your peace of mind.",
       "privacy_p_24": "© 2026 Maors Lawfirm. All rights reserved.",
       "terms_alt_88": "Maors Lawfirm",
       "terms_alt_89": "Maors Lawfirm",
-      "terms_div_80": "Last updated: March 8, 2026",
+      "terms_div_80": "<strong>Last updated:</strong> March 8, 2026",
       "terms_div_81": "Use of this site constitutes agreement to the terms outlined below. Please read carefully before use.",
       "terms_nav_82": "Duplicate",
       "terms_nav_83": "Testimonials",
@@ -1366,9 +1368,9 @@ html[dir="rtl"] body {
       "privacy_h3_10": "Quick Links",
       "privacy_h3_11": "Contact Us",
       "privacy_h3_12": "Follow Us",
-      "privacy_li_40": "Personal Information: Name, email address, phone number and address",
-      "privacy_li_41": "Technical Information: IP address, browser type, operating system and website usage data",
-      "privacy_li_42": "Cookies: Information stored on your computer to improve user experience",
+      "privacy_li_40": "<strong>Personal Information:</strong> Name, email address, phone number and address",
+      "privacy_li_41": "<strong>Technical Information:</strong> IP address, browser type, operating system and website usage data",
+      "privacy_li_42": "<strong>Cookies:</strong> Information stored on your computer to improve user experience",
       "privacy_li_43": "Providing requested services",
       "privacy_li_44": "Improving service and user experience",
       "privacy_li_45": "Contacting you regarding our services",
@@ -1382,21 +1384,21 @@ html[dir="rtl"] body {
       "privacy_li_53": "Right to delete personal information in certain circumstances",
       "privacy_li_54": "Right to object to information processing for marketing purposes",
       "privacy_li_55": "Right to file a complaint with the Data Protection Authority",
-      "privacy_li_56": "Company: Maors Lawfirm",
-      "privacy_li_57": "Email: info@company.com",
-      "privacy_li_58": "Phone: 03-1234567",
-      "privacy_li_59": "Address: כתובת החברה, ישראל",
+      "privacy_li_56": "<strong>Company:</strong> Maors Lawfirm",
+      "privacy_li_57": "<strong>Email:</strong> <a href=\"mailto:info@company.com\" data-i18n=\"privacy_link_26\">info@company.com</a>",
+      "privacy_li_58": "<strong>Phone:</strong> <a href=\"tel:0543951940\">0543951940</a>",
+      "privacy_li_59": "<strong>Address:</strong> כתובת החברה, ישראל",
       "privacy_li_60": "Services",
       "privacy_li_61": "Value Proposition",
       "privacy_li_62": "Testimonials",
       "privacy_li_63": "Trust Signals",
       "privacy_li_64": "Process",
       "privacy_li_65": "Contact",
-      "privacy_li_66": "[business_email]",
+      "privacy_li_66": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"privacy_link_33\">maor.sharon@gmail.com</a>",
       "privacy_li_67": "[business_phone]",
-      "privacy_li_68": "[business_address]",
+      "privacy_li_68": "<a href=\"/\" data-i18n=\"privacy_link_35\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"privacy_span_25\">yael rom 5, Petah Tikva a, 4906215, Israel</span></a>",
       "privacy_li_69": "Privacy Policy",
-      "privacy_li_70": "Terms & Conditions",
+      "privacy_li_70": "Terms &amp; Conditions",
       "privacy_li_71": "Accessibility",
       "terms_link_31": "info@company.com",
       "terms_link_32": "Services",
@@ -1405,17 +1407,17 @@ html[dir="rtl"] body {
       "terms_link_35": "Trust Signals",
       "terms_link_36": "Process",
       "terms_link_37": "Contact",
-      "terms_link_38": "[business_email]",
+      "terms_link_38": "maor.sharon@gmail.com",
       "terms_link_39": "[business_phone]",
-      "terms_link_40": "[business_address]",
+      "terms_link_40": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"terms_span_30\">yael rom 5, Petah Tikva a, 4906215, Israel</span>",
       "terms_link_41": "Privacy Policy",
-      "terms_link_42": "Terms & Conditions",
+      "terms_link_42": "Terms &amp; Conditions",
       "terms_link_43": "Accessibility",
       "terms_link_44": "Generated by Zappy",
-      "terms_span_30": "[business_address]",
+      "terms_span_30": "yael rom 5, Petah Tikva a, 4906215, Israel",
       "privacy_alt_79": "Maors Lawfirm",
       "privacy_alt_80": "Maors Lawfirm",
-      "privacy_div_72": "Last Updated: 3/8/2026",
+      "privacy_div_72": "<strong>Last Updated:</strong> 3/8/2026",
       "privacy_nav_73": "Duplicate",
       "privacy_nav_74": "Testimonials",
       "privacy_nav_75": "Value Proposition",
@@ -1430,14 +1432,14 @@ html[dir="rtl"] body {
       "privacy_link_30": "Trust Signals",
       "privacy_link_31": "Process",
       "privacy_link_32": "Contact",
-      "privacy_link_33": "[business_email]",
+      "privacy_link_33": "maor.sharon@gmail.com",
       "privacy_link_34": "[business_phone]",
-      "privacy_link_35": "[business_address]",
+      "privacy_link_35": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"privacy_span_25\">yael rom 5, Petah Tikva a, 4906215, Israel</span>",
       "privacy_link_36": "Privacy Policy",
-      "privacy_link_37": "Terms & Conditions",
+      "privacy_link_37": "Terms &amp; Conditions",
       "privacy_link_38": "Accessibility",
       "privacy_link_39": "Generated by Zappy",
-      "privacy_span_25": "[business_address]",
+      "privacy_span_25": "yael rom 5, Petah Tikva a, 4906215, Israel",
       "legal_terms_h1_1": "Terms of Use",
       "legal_terms_h2_2": "1. Definitions",
       "legal_terms_h2_3": "2. Description of Services",
@@ -1501,7 +1503,7 @@ html[dir="rtl"] body {
       "accessibility_p_15": "The website has been tested using:",
       "accessibility_p_16": "We are continuously working to improve the accessibility of our website and update it according \n            to technological developments and user feedback.",
       "accessibility_p_17": "If you encounter an accessibility issue on the site or need assistance, please contact us:",
-      "accessibility_p_18": "Response time: We respond to accessibility inquiries within 3 business days and work to resolve issues within 10 business days.",
+      "accessibility_p_18": "<strong>Response time:</strong> We respond to accessibility inquiries within 3 business days and work to resolve issues within 10 business days.",
       "accessibility_p_19": "Trusted legal expertise for your peace of mind.",
       "accessibility_p_20": "© 2026 Maors Lawfirm. All rights reserved.",
       "legal_privacy_h1_1": "Privacy Policy",
@@ -1536,10 +1538,10 @@ html[dir="rtl"] body {
       "accessibility_li_41": "Hierarchical heading structure",
       "accessibility_li_42": "Clear and descriptive links",
       "accessibility_li_43": "Support for 200% zoom without content loss",
-      "accessibility_li_44": "Perceivable: Information is presented in ways users can perceive",
-      "accessibility_li_45": "Operable: Interface components are operable",
-      "accessibility_li_46": "Understandable: Information and user interface are understandable",
-      "accessibility_li_47": "Robust: Content can be interpreted by a variety of technologies",
+      "accessibility_li_44": "<strong>Perceivable:</strong> Information is presented in ways users can perceive",
+      "accessibility_li_45": "<strong>Operable:</strong> Interface components are operable",
+      "accessibility_li_46": "<strong>Understandable:</strong> Information and user interface are understandable",
+      "accessibility_li_47": "<strong>Robust:</strong> Content can be interpreted by a variety of technologies",
       "accessibility_li_48": "NVDA (Windows)",
       "accessibility_li_49": "JAWS (Windows)",
       "accessibility_li_50": "VoiceOver (Mac/iOS)",
@@ -1551,20 +1553,20 @@ html[dir="rtl"] body {
       "accessibility_li_56": "Keyboard-only navigation",
       "accessibility_li_57": "Color contrast verification",
       "accessibility_li_58": "Testing with users with disabilities",
-      "accessibility_li_59": "Company: Maors Lawfirm",
-      "accessibility_li_60": "Email: info@company.com",
-      "accessibility_li_61": "Phone: 03-1234567",
+      "accessibility_li_59": "<strong>Company:</strong> Maors Lawfirm",
+      "accessibility_li_60": "<strong>Email:</strong> <a href=\"mailto:info@company.com\" data-i18n=\"accessibility_link_22\">info@company.com</a>",
+      "accessibility_li_61": "<strong>Phone:</strong> <a href=\"tel:0543951940\">0543951940</a>",
       "accessibility_li_62": "Services",
       "accessibility_li_63": "Value Proposition",
       "accessibility_li_64": "Testimonials",
       "accessibility_li_65": "Trust Signals",
       "accessibility_li_66": "Process",
       "accessibility_li_67": "Contact",
-      "accessibility_li_68": "[business_email]",
+      "accessibility_li_68": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"accessibility_link_29\">maor.sharon@gmail.com</a>",
       "accessibility_li_69": "[business_phone]",
-      "accessibility_li_70": "[business_address]",
+      "accessibility_li_70": "<a href=\"/\" data-i18n=\"accessibility_link_31\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"accessibility_span_21\">yael rom 5, Petah Tikva a, 4906215, Israel</span></a>",
       "accessibility_li_71": "Privacy Policy",
-      "accessibility_li_72": "Terms & Conditions",
+      "accessibility_li_72": "Terms &amp; Conditions",
       "accessibility_li_73": "Accessibility",
       "legal_privacy_li_23": "Personal Information: Name, email address, phone number and address",
       "legal_privacy_li_24": "Technical Information: IP address, browser type, operating system and website usage data",
@@ -1591,7 +1593,7 @@ html[dir="rtl"] body {
       "legal_terms_link_27": "← Back to site",
       "accessibility_alt_82": "Maors Lawfirm",
       "accessibility_alt_83": "Maors Lawfirm",
-      "accessibility_div_74": "Last updated: March 8, 2026",
+      "accessibility_div_74": "<strong>Last updated:</strong> March 8, 2026",
       "accessibility_div_75": "Accessibility Level: AA (Israeli Standard TI 5568)",
       "accessibility_nav_76": "Duplicate",
       "accessibility_nav_77": "Testimonials",
@@ -1607,14 +1609,14 @@ html[dir="rtl"] body {
       "accessibility_link_26": "Trust Signals",
       "accessibility_link_27": "Process",
       "accessibility_link_28": "Contact",
-      "accessibility_link_29": "[business_email]",
+      "accessibility_link_29": "maor.sharon@gmail.com",
       "accessibility_link_30": "[business_phone]",
-      "accessibility_link_31": "[business_address]",
+      "accessibility_link_31": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"accessibility_span_21\">yael rom 5, Petah Tikva a, 4906215, Israel</span>",
       "accessibility_link_32": "Privacy Policy",
-      "accessibility_link_33": "Terms & Conditions",
+      "accessibility_link_33": "Terms &amp; Conditions",
       "accessibility_link_34": "Accessibility",
       "accessibility_link_35": "Generated by Zappy",
-      "accessibility_span_21": "[business_address]",
+      "accessibility_span_21": "yael rom 5, Petah Tikva a, 4906215, Israel",
       "home_meta_description": "Navigate family matters with a trusted family law attorney who combines legal expertise with empathy. Maors Lawfirm provides calm, professional guidance when you need it most.",
       "legal_privacy_link_20": "[business_email]",
       "legal_privacy_link_21": "[business_phone]",
@@ -1744,9 +1746,9 @@ html[dir="rtl"] body {
       "home_li_93": "אותות אמון",
       "home_li_94": "תהליך",
       "home_li_95": "צור קשר",
-      "home_li_96": "[business_email]",
+      "home_li_96": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"home_link_75\">maor.sharon@gmail.com</a>",
       "home_li_97": "[business_phone]",
-      "home_li_98": "[business_address]",
+      "home_li_98": "<a href=\"/\" data-i18n=\"home_link_77\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"home_span_66\">יעל רום 5, פתח תקווה, 4906215, ישראל</span></a>",
       "home_li_99": "מדיניות פרטיות",
       "terms_h1_1": "תנאי שימוש",
       "terms_h2_2": "1. הגדרות",
@@ -1801,7 +1803,7 @@ html[dir="rtl"] body {
       "terms_li_63": "תנאי השימוש הללו מהווים את כלל ההסכם בין הצדדים",
       "terms_li_64": "חברה: Maors Lawfirm",
       "terms_li_65": "אימייל: info@company.com",
-      "terms_li_66": "טלפון: 03-1234567",
+      "terms_li_66": "<strong>טלפון:</strong> <a href=\"tel:0543951940\">0543951940</a>",
       "terms_li_67": "כתובת: כתובת החברה, ישראל",
       "terms_li_68": "שירותים",
       "terms_li_69": "הצעת הערך",
@@ -1809,9 +1811,9 @@ html[dir="rtl"] body {
       "terms_li_71": "סימני אמון",
       "terms_li_72": "תהליך",
       "terms_li_73": "צור קשר",
-      "terms_li_74": "[business_email]",
+      "terms_li_74": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"terms_link_38\">maor.sharon@gmail.com</a>",
       "terms_li_75": "[business_phone]",
-      "terms_li_76": "[business_address]",
+      "terms_li_76": "<a href=\"/\" data-i18n=\"terms_link_40\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"terms_span_30\">יעל רום 5, פתח תקווה, 4906215, ישראל</span></a>",
       "terms_li_77": "מדיניות פרטיות",
       "terms_li_78": "תנאים והגבלות",
       "terms_li_79": "נגישות",
@@ -1828,9 +1830,9 @@ html[dir="rtl"] body {
       "home_link_72": "אותות אמון",
       "home_link_73": "תהליך",
       "home_link_74": "צור קשר",
-      "home_link_75": "[business_email]",
+      "home_link_75": "maor.sharon@gmail.com",
       "home_link_76": "[business_phone]",
-      "home_link_77": "[business_address]",
+      "home_link_77": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"home_span_66\">יעל רום 5, פתח תקווה, 4906215, ישראל</span>",
       "home_link_78": "מדיניות פרטיות",
       "home_link_79": "תנאים והגבלות",
       "home_link_80": "נגישות",
@@ -1847,7 +1849,7 @@ html[dir="rtl"] body {
       "home_span_63": "תקשורת דיסקרטית",
       "home_span_64": "ציפיות ברורות",
       "home_span_65": "ייצוג חמלה ותקיף",
-      "home_span_66": "[business_address]",
+      "home_span_66": "יעל רום 5, פתח תקווה, 4906215, ישראל",
       "privacy_h1_1": "מדיניות פרטיות",
       "privacy_h2_2": "1. איסוף מידע",
       "privacy_h2_3": "2. שימוש במידע",
@@ -1904,7 +1906,7 @@ html[dir="rtl"] body {
       "privacy_li_55": "זכות להגיש תלונה לרשות להגנת הפרטיות",
       "privacy_li_56": "חברה: Maors Lawfirm",
       "privacy_li_57": "דוא\"ל: info@company.com",
-      "privacy_li_58": "טלפון: 03-1234567",
+      "privacy_li_58": "<strong>טלפון:</strong> <a href=\"tel:0543951940\">0543951940</a>",
       "privacy_li_59": "כתובת: כתובת החברה, ישראל",
       "privacy_li_60": "שירותים",
       "privacy_li_61": "הצעת הערך",
@@ -1912,9 +1914,9 @@ html[dir="rtl"] body {
       "privacy_li_63": "אותות אמון",
       "privacy_li_64": "תהליך",
       "privacy_li_65": "צור קשר",
-      "privacy_li_66": "[business_email]",
+      "privacy_li_66": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"privacy_link_33\">maor.sharon@gmail.com</a>",
       "privacy_li_67": "[business_phone]",
-      "privacy_li_68": "[business_address]",
+      "privacy_li_68": "<a href=\"/\" data-i18n=\"privacy_link_35\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"privacy_span_25\">יעל רום 5, פתח תקווה, 4906215, ישראל</span></a>",
       "privacy_li_69": "מדיניות פרטיות",
       "privacy_li_70": "תנאים והגבלות",
       "privacy_li_71": "נגישות",
@@ -1925,14 +1927,14 @@ html[dir="rtl"] body {
       "terms_link_35": "אותות אמון",
       "terms_link_36": "תהליך",
       "terms_link_37": "צור קשר",
-      "terms_link_38": "[business_email]",
+      "terms_link_38": "maor.sharon@gmail.com",
       "terms_link_39": "[business_phone]",
-      "terms_link_40": "[business_address]",
+      "terms_link_40": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"terms_span_30\">יעל רום 5, פתח תקווה, 4906215, ישראל</span>",
       "terms_link_41": "מדיניות פרטיות",
       "terms_link_42": "תנאים והגבלות",
       "terms_link_43": "נגישות",
       "terms_link_44": "נוצר על ידי Zappy",
-      "terms_span_30": "[business_address]",
+      "terms_span_30": "יעל רום 5, פתח תקווה, 4906215, ישראל",
       "privacy_alt_79": "Maors Lawfirm",
       "privacy_alt_80": "Maors Lawfirm",
       "privacy_div_72": "עודכן לאחרונה: 3/8/2026",
@@ -1950,14 +1952,14 @@ html[dir="rtl"] body {
       "privacy_link_30": "אותות אמון",
       "privacy_link_31": "תהליך",
       "privacy_link_32": "צור קשר",
-      "privacy_link_33": "[business_email]",
+      "privacy_link_33": "maor.sharon@gmail.com",
       "privacy_link_34": "[business_phone]",
-      "privacy_link_35": "[business_address]",
+      "privacy_link_35": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"privacy_span_25\">יעל רום 5, פתח תקווה, 4906215, ישראל</span>",
       "privacy_link_36": "מדיניות פרטיות",
       "privacy_link_37": "תנאים והגבלות",
       "privacy_link_38": "נגישות",
       "privacy_link_39": "נוצר על ידי Zappy",
-      "privacy_span_25": "[business_address]",
+      "privacy_span_25": "יעל רום 5, פתח תקווה, 4906215, ישראל",
       "legal_terms_h1_1": "תנאי שימוש",
       "legal_terms_h2_2": "1. הגדרות",
       "legal_terms_h2_3": "2. תיאור השירותים",
@@ -2073,18 +2075,18 @@ html[dir="rtl"] body {
       "accessibility_li_58": "בדיקה עם משתמשים עם מוגבלויות",
       "accessibility_li_59": "חברה: Maors Lawfirm",
       "accessibility_li_60": "אימייל: info@company.com",
-      "accessibility_li_61": "טלפון: 03-1234567",
+      "accessibility_li_61": "<strong>טלפון:</strong> <a href=\"tel:0543951940\">0543951940</a>",
       "accessibility_li_62": "שירותים",
       "accessibility_li_63": "הצעת ערך",
       "accessibility_li_64": "המלצות",
       "accessibility_li_65": "סימני אמינות",
       "accessibility_li_66": "תהליך",
       "accessibility_li_67": "צור קשר",
-      "accessibility_li_68": "[business_email]",
+      "accessibility_li_68": "<i class=\"fas fa-envelope\"></i>\n            <a href=\"mailto:maor.sharon@gmail.com\" data-i18n=\"accessibility_link_29\">maor.sharon@gmail.com</a>",
       "accessibility_li_69": "[business_phone]",
-      "accessibility_li_70": "[business_address]",
+      "accessibility_li_70": "<a href=\"/\" data-i18n=\"accessibility_link_31\"><i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"accessibility_span_21\">יעל רום 5, פתח תקווה, 4906215, ישראל</span></a>",
       "accessibility_li_71": "מדיניות פרטיות",
-      "accessibility_li_72": "תנאי שימוש",
+      "accessibility_li_72": "תנאים והגבלות",
       "accessibility_li_73": "נגישות",
       "legal_privacy_li_23": "מידע אישי: שם, כתובת אימייל, מספר טלפון וכתובת",
       "legal_privacy_li_24": "מידע טכני: כתובת IP, סוג דפדפן, מערכת הפעלה ונתוני שימוש באתר",
@@ -2127,14 +2129,14 @@ html[dir="rtl"] body {
       "accessibility_link_26": "אותות אמון",
       "accessibility_link_27": "תהליך",
       "accessibility_link_28": "צור קשר",
-      "accessibility_link_29": "[business_email]",
+      "accessibility_link_29": "maor.sharon@gmail.com",
       "accessibility_link_30": "[business_phone]",
-      "accessibility_link_31": "[business_address]",
+      "accessibility_link_31": "<i class=\"fas fa-map-marker-alt\"></i>\n            <span data-i18n=\"accessibility_span_21\">יעל רום 5, פתח תקווה, 4906215, ישראל</span>",
       "accessibility_link_32": "מדיניות פרטיות",
       "accessibility_link_33": "תנאים והגבלות",
       "accessibility_link_34": "נגישות",
       "accessibility_link_35": "נוצר על ידי Zappy",
-      "accessibility_span_21": "[business_address]",
+      "accessibility_span_21": "יעל רום 5, פתח תקווה, 4906215, ישראל",
       "home_meta_description": "נווטו בענייני משפחה עם עורך דין מהימן לדיני משפחה המשלב מומחיות משפטית עם אמפתיה. Maors Lawfirm מספק הדרכה רגועה ומקצועית כשאתם הכי זקוקים לה.",
       "legal_privacy_link_20": "[business_email]",
       "legal_privacy_link_21": "[business_phone]",
@@ -2397,7 +2399,37 @@ html[dir="rtl"] body {
         el.style.textAlign = origTA;
       }
     });
-    
+
+    // Swap text-align in CSS stylesheet rules when direction changes.
+    // CSS rules with text-align:right (from RTL-primary generation) must become
+    // text-align:left when viewing in LTR, and vice versa.
+    if (!window.__zappyOrigTA) window.__zappyOrigTA = new WeakMap();
+    var origTAMap = window.__zappyOrigTA;
+    for (var si = 0; si < document.styleSheets.length; si++) {
+      try {
+        var sheetRules = document.styleSheets[si].cssRules;
+        for (var ri = 0; ri < sheetRules.length; ri++) {
+          var cssRule = sheetRules[ri];
+          if (!cssRule.style || !cssRule.selectorText) continue;
+          var rta = cssRule.style.textAlign;
+          if (!rta || rta === 'center' || rta === 'justify' || rta === 'start' || rta === 'end') continue;
+          if (cssRule.selectorText.indexOf('[dir=') !== -1) continue;
+          if (/direction\s*:/i.test(cssRule.cssText)) continue;
+          if (/^(html|body)\s*,?\s*(html|body)?\s*$/.test(cssRule.selectorText.trim())) continue;
+          if (/\.(lang-option|lang-switcher|mobile-lang)/.test(cssRule.selectorText)) continue;
+          if (!origTAMap.has(cssRule)) {
+            origTAMap.set(cssRule, rta);
+          }
+          var origRTA = origTAMap.get(cssRule);
+          if (needsSwap) {
+            cssRule.style.textAlign = origRTA === 'right' ? 'left' : 'right';
+          } else {
+            cssRule.style.textAlign = origRTA;
+          }
+        }
+      } catch(e) {}
+    }
+
     // Update catalog menu RTL class to match current direction
     // This is critical for e-commerce sites with category navigation
     document.querySelectorAll('.zappy-catalog-menu').forEach(function(el) {
@@ -3083,14 +3115,18 @@ html[dir="rtl"] body {
       function sTC(c,clr){var els=c.querySelectorAll(neSel);for(var i=0;i<els.length;i++){var sk=false;for(var j=0;j<skipCls.length;j++){if(els[i].classList.contains(skipCls[j])){sk=true;break;}}if(!sk)els[i].style.setProperty('color',clr,'important');}}
       function cTC(c){var els=c.querySelectorAll(neSel);for(var i=0;i<els.length;i++)els[i].style.removeProperty('color');}
       function applyScrolled(){
-        nb.classList.add('scrolled');nb.style.setProperty('--frosted-text',st);
-        nb.style.setProperty('background-image','none','important');
-        nb.style.backdropFilter='blur(12px)';nb.style.webkitBackdropFilter='blur(12px)';nb.style.boxShadow='0 2px 16px rgba(0,0,0,0.12)';
-        sTC(nb,st);
-        if(window.innerWidth>768){nb.style.setProperty('background-color',fb,'important');}
-        if(cm){cm.classList.add('scrolled');cm.style.setProperty('background',fb,'important');cm.style.setProperty('backdrop-filter','blur(12px)','important');cm.style.setProperty('-webkit-backdrop-filter','blur(12px)','important');sTC(cm,st);}
+        nb.classList.add('scrolled');
+        if(window.innerWidth>768){
+          nb.style.setProperty('--frosted-text',st);
+          nb.style.setProperty('background-image','none','important');
+          nb.style.setProperty('background-color',fb,'important');
+          nb.style.backdropFilter='blur(12px)';nb.style.webkitBackdropFilter='blur(12px)';nb.style.boxShadow='0 2px 16px rgba(0,0,0,0.12)';
+          sTC(nb,st);
+        }
+        if(cm){cm.classList.add('scrolled');if(window.innerWidth>768){cm.style.setProperty('background',fb,'important');cm.style.setProperty('backdrop-filter','blur(12px)','important');cm.style.setProperty('-webkit-backdrop-filter','blur(12px)','important');sTC(cm,st);}}
       }
       function onS(){
+        if(window._zappyNavNoDarkHero) return;
         if(window.innerWidth<=768){nb.classList.remove('scrolled');cTC(nb);if(cm){cm.classList.remove('scrolled');cTC(cm);}return;}
         var y=window.scrollY||window.pageYOffset;
         if(y>th){
@@ -3112,7 +3148,7 @@ html[dir="rtl"] body {
       var heroEl=document.querySelector('section[class*="hero"],[data-hero-type],main>section:first-child');
       var hasDH=false;
       if(heroEl){var hCs=getComputedStyle(heroEl);var hBI=hCs.backgroundImage;if(hBI&&hBI!=='none'){if(hBI.indexOf('url(')!==-1){var hM2=hCs.backgroundColor.match(/\d+/g);if(hM2&&hM2.length>=3){hasDH=sLum(parseInt(hM2[0]),parseInt(hM2[1]),parseInt(hM2[2]))<0.4;}else{hasDH=true;}}else if(hBI.indexOf('gradient')!==-1){var cM=hBI.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/g);if(cM&&cM.length>0){var tLm=0;for(var ci=0;ci<cM.length;ci++){var pts=cM[ci].match(/\d+/g);tLm+=sLum(parseInt(pts[0]),parseInt(pts[1]),parseInt(pts[2]));}hasDH=(tLm/cM.length)<0.4;}else{hasDH=true;}}else{hasDH=true;}}else{var hM=hCs.backgroundColor.match(/\d+/g);if(hM&&hM.length>=3){hasDH=sLum(parseInt(hM[0]),parseInt(hM[1]),parseInt(hM[2]))<0.4;}}}
-      if(!hasDH){window.removeEventListener('scroll',onS);window.removeEventListener('resize',onS);applyScrolled();}
+      if(!hasDH){window.removeEventListener('scroll',onS);window.removeEventListener('resize',onS);applyScrolled();window._zappyNavNoDarkHero=true;}
     })();
     </script>
 
