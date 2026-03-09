@@ -2,75 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com</loc>
+    <loc>https://maors-lawfirm.zappy5.app</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app" />
   </url>
   <url>
-    <loc>https://example.com/he</loc>
+    <loc>https://maors-lawfirm.zappy5.app/he</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app" />
   </url>
   <url>
-    <loc>https://example.com/privacy</loc>
+    <loc>https://maors-lawfirm.zappy5.app/privacy</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/privacy" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/privacy" />
   </url>
   <url>
-    <loc>https://example.com/he/privacy</loc>
+    <loc>https://maors-lawfirm.zappy5.app/he/privacy</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/privacy" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/privacy" />
   </url>
   <url>
-    <loc>https://example.com/terms</loc>
+    <loc>https://maors-lawfirm.zappy5.app/terms</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/terms" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/terms" />
   </url>
   <url>
-    <loc>https://example.com/he/terms</loc>
+    <loc>https://maors-lawfirm.zappy5.app/he/terms</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/terms" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/terms" />
   </url>
   <url>
-    <loc>https://example.com/accessibility</loc>
+    <loc>https://maors-lawfirm.zappy5.app/accessibility</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/accessibility" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/accessibility" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/accessibility" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/accessibility" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/accessibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/accessibility" />
   </url>
   <url>
-    <loc>https://example.com/he/accessibility</loc>
+    <loc>https://maors-lawfirm.zappy5.app/he/accessibility</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/accessibility" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://example.com/he/accessibility" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/accessibility" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maors-lawfirm.zappy5.app/accessibility" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://maors-lawfirm.zappy5.app/he/accessibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maors-lawfirm.zappy5.app/accessibility" />
   </url>
 </urlset>
