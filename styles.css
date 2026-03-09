@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
@@ -160,8 +160,8 @@
   --gradient-overlay-dark: linear-gradient(180deg, rgba(35,50,77,0.00) 0%, rgba(35,50,77,0.35) 100%);
   --gradient-overlay-light: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.92) 55%, rgba(255,255,255,0.96) 100%);
   
-  --font-heading: 'Cormorant Garamond', ui-serif, Georgia, serif;
-  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
   --nav-overlay-opacity: 0.35;
   --primary-color: #A21CAF;
   --secondary-color: #06748e;
@@ -170,7 +170,11 @@
   --surface-color: #FAFAFA;
   --text-color: #4a4a4a;
   --text-secondary-color: #707070;
-}
+
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --font-family: 'Roboto', sans-serif;
+  --font-primary: 'Roboto', sans-serif;}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -184,7 +188,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }html[dir="ltr"]{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px !important;
   line-height: 1.7 !important;
   color: var(--text-dark);
@@ -193,7 +197,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--text-dark);
   letter-spacing: -0.02em;
 }
@@ -258,7 +262,7 @@ img {
 }
 
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border: none;
   outline: none;
@@ -309,7 +313,7 @@ button {
 }
 
 .eyebrow {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1129,7 +1133,7 @@ html[lang="ar"] .nav-right-group .nav-menu{order: 1;}
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   display: inline-flex;
@@ -1714,7 +1718,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   background-color: var(--bg-dark);
   color: var(--text-light);
   padding: 4rem 0 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
 }
 
@@ -1977,7 +1981,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-hero-section__headline {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 1.15;
@@ -1987,7 +1991,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-hero-section__subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.65;
@@ -2010,7 +2014,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   padding: 14px 26px;
   border-radius: 3px;
   border: 1px solid var(--accent);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -2048,7 +2052,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   padding: 14px 26px;
   border-radius: 3px;
   border: 1px solid var(--border-light);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -2067,7 +2071,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-hero-section__reassurance {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -2145,7 +2149,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-services-intro h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.3;
@@ -2191,7 +2195,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-services-card h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
@@ -2207,7 +2211,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-services-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--accent);
@@ -2297,7 +2301,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-value-proposition-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.3;
@@ -2307,7 +2311,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-value-proposition-intro {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-dark);
@@ -2341,7 +2345,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-value-proposition-value-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
@@ -2350,7 +2354,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-value-proposition-value-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-dark);
@@ -2472,7 +2476,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-testimonials-section .home-testimonials-intro h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.3;
@@ -2482,7 +2486,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-testimonials-section .home-testimonials-intro p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-muted);
   line-height: 1.7;
   margin: 0;
@@ -2517,7 +2521,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-testimonials-section .home-testimonials-quote {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
@@ -2527,7 +2531,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-testimonials-section .home-testimonials-client {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -2536,7 +2540,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-testimonials-section .home-testimonials-disclaimer {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 1.6;
   color: var(--text-muted);
@@ -2612,7 +2616,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-trust-signals-section .home-trust-signals-header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.3;
@@ -2622,7 +2626,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-trust-signals-section .home-trust-signals-header p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-light);
@@ -2658,7 +2662,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-trust-signals-section .trust-tile h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.4;
@@ -2668,7 +2672,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-trust-signals-section .trust-tile p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-light);
@@ -2705,7 +2709,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-trust-signals-section .chip span {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: var(--text-light);
@@ -2790,7 +2794,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-process-section .home-process-intro h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.3;
@@ -2800,7 +2804,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-process-section .home-process-intro p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-muted);
@@ -2837,7 +2841,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   height: 52px;
   background: var(--accent);
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--primary);
@@ -2846,7 +2850,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-process-section .home-process-step-card h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
@@ -2855,7 +2859,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-process-section .home-process-step-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-muted);
@@ -2878,7 +2882,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-process-section .home-process-note small {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-muted);
@@ -2974,7 +2978,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-contact-section h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0;
@@ -2984,7 +2988,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-contact-section .home-contact-intro {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-light);
@@ -3005,7 +3009,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-light);
@@ -3043,7 +3047,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-contact-section .home-contact-form-group label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -3052,7 +3056,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 
 .home-contact-section .home-contact-form-group input,
 .home-contact-section .home-contact-form-group textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 12px 14px;
   border: 1px solid var(--border-light);
@@ -3080,7 +3084,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   padding: 12px 24px;
   border-radius: 3px;
   border: 1px solid #B9872F;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -3110,7 +3114,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .home-contact-section .home-contact-disclaimer small {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 1.6;
   color: var(--text-muted);
@@ -3144,7 +3148,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 
@@ -4116,7 +4120,6 @@ nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #0891B2) !importa
   }
 }
 /* === NAVBAR STYLE OVERRIDES END === */
-
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
