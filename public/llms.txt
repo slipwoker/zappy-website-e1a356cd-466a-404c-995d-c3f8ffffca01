@@ -1,6 +1,4 @@
-# Maors Lawfirm — Generative Engine Optimization Map
-
-> A family law firm seeking to convey professionalism, empathy, and trust through a minimalist luxury aesthetic. The brand emphasizes approachability while maintaining legal authority, with a focus on creating a calm, sophisticated atmosphere that reassures clients during sensitive family matters.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -28,18 +26,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Maors Lawfirm
-A family law firm seeking to convey professionalism, empathy, and trust through a minimalist luxury aesthetic. The brand emphasizes approachability while maintaining legal authority, with a focus on creating a calm, sophisticated atmosphere that reassures clients during sensitive family matters.
-
-## Target Audience
-- Divorcing Parents
-- Blended Families
-- High Net-worth Individuals
-- Unmarried Couples with Children
-
-## Industry
-legal services
-
+## About Business
 ---
 
 # Additional Resources
