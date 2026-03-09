@@ -137,19 +137,19 @@
   src: url('assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 :root {
---primary: #1a2238;
-  --secondary: #d7dde5;
-  --accent: #c2a67a;
-  --bg-light: #f5f7f9;
+--primary: #1A4D8F;
+  --secondary: #ba4a3f;
+  --accent: #925e0b;
+  --bg-light: #FFFFFF;
   --bg-dark: #1a2238;
-  --text-dark: #1a2238;
+  --text-dark: #4a4a4a;
   --text-light: #ffffff;
-  --text-muted: #5b6476;
-  --border-light: #d7dde5;
-  --border-dark: #2a3552;
+  --text-muted: #707070;
+  --border-light: #818589;
+  --border-dark: #77829f;
   --nav-bg: transparent;
-  --nav-text: #ffffff;
-  --nav-text-hover: #1a2238;
+  --nav-text: #4a4a4a;
+  --nav-text-hover: #ba4a3f;
   
   --gradient-primary: linear-gradient(180deg, #D2A84E 0%, #C59A45 45%, #B9872F 100%);
   --gradient-secondary: linear-gradient(180deg, #2A3A59 0%, #23324D 55%, #1F2836 100%);
@@ -163,6 +163,13 @@
   --font-heading: 'Cormorant Garamond', ui-serif, Georgia, serif;
   --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   --nav-overlay-opacity: 0.35;
+  --primary-color: #1A4D8F;
+  --secondary-color: #ba4a3f;
+  --accent-color: #925e0b;
+  --background-color: #FFFFFF;
+  --surface-color: #F8F9FB;
+  --text-color: #4a4a4a;
+  --text-secondary-color: #707070;
 }
 
 *, *::before, *::after {
@@ -408,18 +415,18 @@ button {
 /* Navbar Styles */
 :root {
   --nav-bg: transparent;
-  --nav-text: #ffffff;
-  --nav-text-hover: #1a2238;
-  --primary: #1a2238;
-  --secondary: #d7dde5;
-  --accent: #c2a67a;
-  --bg-light: #f5f7f9;
+  --nav-text: #4a4a4a;
+  --nav-text-hover: #ba4a3f;
+  --primary: #1A4D8F;
+  --secondary: #ba4a3f;
+  --accent: #925e0b;
+  --bg-light: #FFFFFF;
   --bg-dark: #1a2238;
-  --text-dark: #1a2238;
+  --text-dark: #4a4a4a;
   --text-light: #ffffff;
-  --text-muted: #5b6476;
-  --border-light: #d7dde5;
-  --border-dark: #2a3552;
+  --text-muted: #707070;
+  --border-light: #818589;
+  --border-dark: #77829f;
 }
 
 .navbar {
@@ -666,18 +673,18 @@ button {
 }
 :root {
   --nav-bg: transparent;
-  --nav-text: #ffffff;
-  --nav-text-hover: #1a2238;
-  --primary: #1a2238;
-  --secondary: #d7dde5;
-  --accent: #c2a67a;
-  --bg-light: #f5f7f9;
+  --nav-text: #4a4a4a;
+  --nav-text-hover: #ba4a3f;
+  --primary: #1A4D8F;
+  --secondary: #ba4a3f;
+  --accent: #925e0b;
+  --bg-light: #FFFFFF;
   --bg-dark: #1a2238;
-  --text-dark: #1a2238;
+  --text-dark: #4a4a4a;
   --text-light: #ffffff;
-  --text-muted: #5b6476;
-  --border-light: #d7dde5;
-  --border-dark: #2a3552;
+  --text-muted: #707070;
+  --border-light: #818589;
+  --border-dark: #77829f;
 }
 
 .navbar {
@@ -1691,16 +1698,16 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 
 /* Footer Styles */
 :root {
-  --primary: #1a2238;
-  --secondary: #d7dde5;
-  --accent: #c2a67a;
-  --bg-light: #f5f7f9;
+  --primary: #1A4D8F;
+  --secondary: #ba4a3f;
+  --accent: #925e0b;
+  --bg-light: #FFFFFF;
   --bg-dark: #1a2238;
-  --text-dark: #1a2238;
+  --text-dark: #4a4a4a;
   --text-light: #ffffff;
-  --text-muted: #5b6476;
-  --border-light: #d7dde5;
-  --border-dark: #2a3552;
+  --text-muted: #707070;
+  --border-light: #818589;
+  --border-dark: #77829f;
 }
 
 .site-footer {
@@ -2860,7 +2867,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   margin: 0 auto;
   text-align: center;
   padding: 24px 16px;
-  background: #F6F6F6;
+  background: #FFFFFF;
   border-left: 3px solid var(--accent);
   border-radius: 0;
 }
@@ -3761,7 +3768,7 @@ body.accessibility-widget-visible ._access-menu {
    Added: 2026-03-08T18:06:49.962Z
    ═══════════════════════════════════════════════════════════ */
 .home-services-section {
-  background: #F6F6F6;
+  background: #FFFFFF;
   color: var(--text-dark);
   position: relative;
   padding: 80px 16px 100px;
@@ -3943,56 +3950,59 @@ body.accessibility-widget-visible ._access-menu {
     margin-bottom: 12px;
   }
 }
+
+/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
+@media (min-width: 769px) {
+  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+    max-height: none !important;
+    height: 42px !important;
+    max-width: 170px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+  .nav-container {
+    min-height: 72px !important;
+  }
+}
+/* /Zappy custom logo size */
+
 /* === NAVBAR STYLE OVERRIDES START === */
-.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
+.navbar { background-color: var(--nav-bg, transparent) !important; transition: background-color 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
 .navbar .nav-menu > li > a,
 .navbar .nav-menu > .nav-item > a,
 .navbar .nav-link,
 .navbar .navbar-nav .nav-link,
-.navbar a { color: #ffffff !important; }
+.navbar a { color: var(--nav-text, #4a4a4a) !important; }
 .navbar .nav-menu > li > a:hover,
 .navbar .nav-menu > .nav-item > a:hover,
 .navbar .nav-link:hover,
-.navbar a:hover { color: #1a2238 !important; }
-.navbar .navbar-brand, .navbar .navbar-brand a { color: #ffffff !important; }
-.navbar .dropdown-toggle { color: #ffffff !important; }
-.navbar .dropdown-toggle:hover { color: #1a2238 !important; }
-.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #ffffff !important; }
-.navbar-toggler { color: #ffffff !important; border-color: #ffffff44 !important; }
-.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
-.navbar .dropdown-menu { background-color: #1a2238 !important; }
+.navbar a:hover { color: var(--nav-text-hover, #ba4a3f) !important; }
+.navbar .navbar-brand, .navbar .navbar-brand a { color: var(--nav-text, #4a4a4a) !important; }
+.navbar .dropdown-toggle { color: var(--nav-text, #4a4a4a) !important; }
+.navbar .dropdown-toggle:hover { color: var(--nav-text-hover, #ba4a3f) !important; }
+.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: var(--nav-text, #4a4a4a) !important; }
+.navbar-toggler { color: var(--nav-text, #4a4a4a) !important; border-color: #4a4a4a44 !important; }
+.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%234a4a4a' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+.navbar .dropdown-menu { background-color: var(--nav-bg, transparent) !important; }
 .navbar .dropdown-menu li a,
-.navbar .dropdown-menu .dropdown-item { color: #ffffff !important; }
+.navbar .dropdown-menu .dropdown-item { color: var(--nav-text, #4a4a4a) !important; }
 .navbar .dropdown-menu li a:hover,
-.navbar .dropdown-menu .dropdown-item:hover { color: #1a2238 !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .dropdown-menu .dropdown-item:hover { color: var(--nav-text-hover, #ba4a3f) !important; background-color: rgba(128,128,128,0.1) !important; }
 .navbar .sub-menu,
 .navbar ul.sub-menu,
-nav.navbar .sub-menu { background-color: #1a2238 !important; }
+nav.navbar .sub-menu { background-color: var(--nav-bg, #FFFFFF) !important; }
 .navbar .sub-menu a,
 .navbar .sub-menu li a,
 .navbar .nav-menu .sub-menu a,
 .navbar .nav-menu .sub-menu li a,
 .navbar .zappy-products-dropdown .sub-menu a,
-nav.navbar .sub-menu li a { color: #ffffff !important; }
+nav.navbar .sub-menu li a { color: var(--nav-text, #4a4a4a) !important; }
 .navbar .sub-menu a:hover,
 .navbar .sub-menu li a:hover,
-nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: rgba(128,128,128,0.1) !important; }
-.navbar .mobile-submenu-toggle { color: #ffffff !important; }
-.navbar .phone-header-btn { color: #ffffff !important; }
-.navbar .nav-search-input,
-.navbar .nav-search-box .nav-search-input { color: #333333 !important; }
-.navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.navbar .nav-search-result-name { color: #333333 !important; }
-.navbar .nav-search-result-item a { color: #333333 !important; }
-.navbar .nav-search-result-price { color: var(--primary) !important; }
-.navbar .nav-search-no-results,
-.navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { background: transparent !important; }
-.zappy-catalog-menu .catalog-menu-item,
-.zappy-catalog-menu .catalog-menu-all { color: #ffffff !important; }
-.zappy-catalog-menu .catalog-menu-item:hover,
-.zappy-catalog-menu .catalog-menu-all:hover { color: #1a2238 !important; background: rgba(128,128,128,0.1) !important; }
+nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #ba4a3f) !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .mobile-submenu-toggle { color: var(--nav-text, #4a4a4a) !important; }
+.navbar .phone-header-btn { color: var(--nav-text, #4a4a4a) !important; }
 .navbar .cart-link.nav-cart,
 .navbar .login-link.nav-login,
 .navbar .nav-search-toggle,
@@ -4002,80 +4012,88 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
 .navbar .nav-search-toggle:hover,
 .navbar .search-toggle:hover { background: rgba(128,128,128,0.15) !important; color: var(--text-dark, #1a1a1a) !important; }
 .navbar .cart-link.nav-cart svg, .navbar .login-link.nav-login svg, .navbar .nav-search-toggle svg, .navbar .search-toggle svg { color: inherit !important; fill: none !important; stroke: currentColor !important; }
+.navbar .nav-search-input,
+.navbar .nav-search-box .nav-search-input { color: #333333 !important; }
+.navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
+.navbar .nav-search-result-name { color: #333333 !important; }
+.navbar .nav-search-result-item a { color: #333333 !important; }
+.navbar .nav-search-result-price { color: var(--primary) !important; }
+.navbar .nav-search-no-results,
+.navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { background: var(--nav-bg, transparent) !important; background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity,0.25)), transparent) !important; }
+.zappy-catalog-menu .catalog-menu-item,
+.zappy-catalog-menu .catalog-menu-all { color: var(--nav-text, #4a4a4a) !important; }
+.zappy-catalog-menu .catalog-menu-item:hover,
+.zappy-catalog-menu .catalog-menu-all:hover { color: var(--nav-text-hover, #ba4a3f) !important; background: rgba(128,128,128,0.1) !important; }
 
+.navbar { background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity,0.25)), transparent) !important; }
 @media (min-width: 769px) {
-  .navbar:not(.scrolled) .dropdown-menu { background-color: #1a2238 !important; }
+  .navbar:not(.scrolled) .dropdown-menu { background-color: #FFFFFF !important; }
   .navbar:not(.scrolled) .dropdown-menu li a,
-  .navbar:not(.scrolled) .dropdown-menu .dropdown-item { color: #ffffff !important; }
+  .navbar:not(.scrolled) .dropdown-menu .dropdown-item { color: #4a4a4a !important; }
   .navbar:not(.scrolled) .dropdown-menu li a:hover,
   .navbar:not(.scrolled) .dropdown-menu .dropdown-item:hover { color: var(--nav-text-hover, var(--primary)) !important; }
-  .navbar:not(.scrolled) .sub-menu { background-color: #1a2238 !important; }
+  .navbar:not(.scrolled) .sub-menu { background-color: #FFFFFF !important; }
   .navbar:not(.scrolled) .sub-menu a,
   .navbar:not(.scrolled) .sub-menu li a,
   .navbar:not(.scrolled) .nav-menu .sub-menu a,
-  .navbar:not(.scrolled) .zappy-products-dropdown .sub-menu a { color: #ffffff !important; }
+  .navbar:not(.scrolled) .zappy-products-dropdown .sub-menu a { color: #4a4a4a !important; }
   .navbar:not(.scrolled) .sub-menu a:hover,
   .navbar:not(.scrolled) .sub-menu li a:hover { color: var(--nav-text-hover, var(--primary)) !important; }
 }
-.navbar.scrolled { background-color: rgba(245,247,249,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
+.navbar.scrolled { background-color: rgba(255,255,255,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
 .navbar.scrolled::before, .navbar.scrolled::after { background: transparent !important; opacity: 0 !important; }
-.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(245,247,249,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
-.zappy-catalog-menu.scrolled .catalog-menu-item,
-.zappy-catalog-menu.scrolled .catalog-menu-all,
-#zappy-catalog-menu.scrolled .catalog-menu-item,
-#zappy-catalog-menu.scrolled .catalog-menu-all,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all { color: var(--frosted-text, #1a2238) !important; }
-.zappy-catalog-menu.scrolled .catalog-menu-item:hover,
-.zappy-catalog-menu.scrolled .catalog-menu-all:hover,
-#zappy-catalog-menu.scrolled .catalog-menu-item:hover,
-#zappy-catalog-menu.scrolled .catalog-menu-all:hover,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item:hover,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all:hover,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item:hover,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all:hover { color: var(--nav-text-hover, var(--primary)) !important; }
+.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(255,255,255,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
 .navbar.scrolled .nav-menu > li > a,
 .navbar.scrolled .nav-menu > .nav-item > a,
 .navbar.scrolled .nav-link,
-.navbar.scrolled a { color: var(--frosted-text, #1a2238) !important; }
+.navbar.scrolled a { color: #4a4a4a !important; }
 .navbar.scrolled .nav-menu > li > a:hover,
 .navbar.scrolled .nav-menu > .nav-item > a:hover,
 .navbar.scrolled .nav-link:hover,
 .navbar.scrolled a:hover { color: var(--nav-text-hover, var(--primary)) !important; }
-.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: var(--frosted-text, #1a2238) !important; }
-.navbar.scrolled .dropdown-toggle { color: var(--frosted-text, #1a2238) !important; }
-.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: var(--frosted-text, #1a2238) !important; }
-.navbar.scrolled .phone-header-btn { color: var(--frosted-text, #1a2238) !important; }
-.navbar.scrolled .mobile-toggle { color: var(--frosted-text, #1a2238) !important; }
-.navbar.scrolled .mobile-toggle svg { color: inherit !important; }
-.navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
+.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: #4a4a4a !important; }
+.navbar.scrolled .dropdown-toggle { color: #4a4a4a !important; }
+.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: #4a4a4a !important; }
+.navbar.scrolled .phone-header-btn { color: #4a4a4a !important; }
+.navbar.scrolled .mobile-toggle { color: #4a4a4a !important; }
+.navbar.scrolled .dropdown-menu { background-color: rgba(255, 255, 255, 0.95) !important; }
+.navbar.scrolled .dropdown-menu li a,
+.navbar.scrolled .dropdown-menu .dropdown-item { color: #4a4a4a !important; }
+.navbar.scrolled .sub-menu { background-color: rgba(255, 255, 255, 0.95) !important; }
+.navbar.scrolled .sub-menu a,
+.navbar.scrolled .sub-menu li a { color: #4a4a4a !important; }
+.navbar.scrolled .mobile-submenu-toggle { color: #4a4a4a !important; }
+.zappy-catalog-menu.scrolled .catalog-menu-item,
+.zappy-catalog-menu.scrolled .catalog-menu-all,
+#zappy-catalog-menu.scrolled .catalog-menu-item,
+#zappy-catalog-menu.scrolled .catalog-menu-all { color: #4a4a4a !important; }
 
 .navbar.scrolled .cart-link.nav-cart,
 .navbar.scrolled .login-link.nav-login,
 .navbar.scrolled .nav-search-toggle,
 .navbar.scrolled .search-toggle { background: var(--bg-light, #ffffff) !important; color: var(--text-dark, #1a1a1a) !important; }
 @media (max-width: 768px) {
-  .navbar { background-color: transparent !important; background-image: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
+  .navbar { background-color: var(--nav-bg, transparent) !important; background-image: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
   .zappy-catalog-menu, #zappy-catalog-menu { background-image: none !important; }
   .navbar::before, .navbar::after { background: transparent !important; opacity: 0 !important; }
-  body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .navbar:has(.nav-menu.active), .navbar:has(#navMenu.active), .navbar:has(.mobile-menu.active), .navbar:has(.mobile-toggle.active), .navbar:has(#mobileToggle.active) { background-color: #1a2238 !important; }
-  .nav-menu, .nav-menu.active, .nav-menu.nav-menu-active, #navMenu, #navMenu.active, .mobile-menu, .mobile-menu.active, .mobile-nav, .mobile-nav.active { background-color: #1a2238 !important; background: #1a2238 !important; }
-  .nav-menu a, .nav-menu > li > a, #navMenu a, #navMenu > li > a { color: #ffffff !important; }
-  .nav-menu a:hover, .nav-menu > li > a:hover { color: #1a2238 !important; }
+  body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .navbar:has(.nav-menu.active), .navbar:has(#navMenu.active), .navbar:has(.mobile-menu.active), .navbar:has(.mobile-toggle.active), .navbar:has(#mobileToggle.active) { background-color: #FFFFFF !important; }
+  .nav-menu, .nav-menu.active, #navMenu, #navMenu.active, .mobile-menu, .mobile-menu.active, .mobile-nav, .mobile-nav.active { background-color: #FFFFFF !important; background: #FFFFFF !important; }
+  .nav-menu a, .nav-menu > li > a, #navMenu a, #navMenu > li > a { color: #4a4a4a !important; }
+  .nav-menu a:hover, .nav-menu > li > a:hover { color: var(--nav-text-hover, #ba4a3f) !important; }
   .nav-menu .dropdown-menu { background: rgba(128,128,128,0.06) !important; }
-  .nav-menu .dropdown-menu a, .nav-menu .dropdown-menu li a { color: #ffffff !important; }
-  .nav-menu .dropdown-menu a:hover { color: #1a2238 !important; }
-  .nav-menu .sub-menu a { color: #ffffff !important; }
-  .nav-menu .sub-menu a:hover { color: #1a2238 !important; }
+  .nav-menu .dropdown-menu a, .nav-menu .dropdown-menu li a { color: #4a4a4a !important; }
+  .nav-menu .dropdown-menu a:hover { color: var(--nav-text-hover, #ba4a3f) !important; }
+  .nav-menu .sub-menu a { color: #4a4a4a !important; }
+  .nav-menu .sub-menu a:hover { color: var(--nav-text-hover, #ba4a3f) !important; }
   .nav-menu > li { position: relative !important; }
-  .navbar .nav-menu .mobile-submenu-toggle { color: #ffffff !important; position: static !important; height: auto !important; flex-shrink: 0 !important; align-self: stretch !important; }
-  .mobile-toggle { color: #ffffff !important; }
+  .navbar .nav-menu .mobile-submenu-toggle { color: #4a4a4a !important; position: static !important; height: auto !important; flex-shrink: 0 !important; align-self: stretch !important; }
+  
+  .mobile-toggle { color: var(--nav-text, #4a4a4a) !important; }
   .mobile-toggle svg { color: inherit !important; }
   .mobile-toggle svg path { stroke: currentColor !important; }
   
-  /* When menu is open or navbar is scrolled in mobile, the background is dropdownBg, so text should be mobileMenuText */
+  /* When menu is open or navbar is scrolled in mobile, the background is paletteDropdownBg, so text should be paletteMobileMenuText */
   .navbar.scrolled .mobile-toggle, .navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn,
   .navbar.scrolled .navbar-brand, .navbar.scrolled .dropdown-toggle, .navbar.scrolled .phone-header-btn,
   body.menu-open .navbar .mobile-toggle, body.nav-open .navbar .mobile-toggle, body.mobile-menu-open .navbar .mobile-toggle,
@@ -4087,7 +4105,7 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   body.menu-open .navbar .phone-header-btn, body.nav-open .navbar .phone-header-btn, body.mobile-menu-open .navbar .phone-header-btn,
   .navbar.active .phone-header-btn, .navbar.open .phone-header-btn, .navbar.show .phone-header-btn, .navbar.menu-open .phone-header-btn,
   .navbar:has(.nav-menu.active) .phone-header-btn, .navbar:has(#navMenu.active) .phone-header-btn, .navbar:has(.mobile-menu.active) .phone-header-btn, .navbar:has(.mobile-toggle.active) .phone-header-btn {
-    color: #ffffff !important;
+    color: #4a4a4a !important;
   }
   
   .navbar.scrolled .mobile-toggle svg { color: inherit !important; }
@@ -4096,7 +4114,7 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   .navbar.scrolled .nav-menu > li > a,
   .navbar.scrolled .nav-menu > .nav-item > a,
   .navbar.scrolled .nav-link,
-  .navbar.scrolled a { color: #ffffff !important; }
+  .navbar.scrolled a { color: #4a4a4a !important; }
   .cart-link.nav-cart,
   .login-link.nav-login,
   .nav-search-toggle,
@@ -4105,11 +4123,11 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   .login-link.nav-login svg,
   .nav-search-toggle svg,
   .search-toggle svg { stroke: var(--text-dark, #1a1a1a) !important; color: var(--text-dark, #1a1a1a) !important; }
-  .mobile-search-panel input { color: #E0E0E0 !important; background: rgba(255,255,255,0.12) !important; }
-  .mobile-search-panel .close-search { color: #E0E0E0 !important; background: rgba(255,255,255,0.15) !important; }
-  .mobile-search-panel .close-search svg { stroke: #E0E0E0 !important; color: #E0E0E0 !important; }
-  .mobile-search-panel .close-search:hover { color: #E0E0E0 !important; background: rgba(255,255,255,0.25) !important; }
-  .mobile-search-panel .close-search:hover svg { stroke: #E0E0E0 !important; color: #E0E0E0 !important; }
+  .mobile-search-panel input { color: #333333 !important; background: #fff !important; }
+  .mobile-search-panel .close-search { color: #333333 !important; background: #F3F4F6 !important; }
+  .mobile-search-panel .close-search svg { stroke: #333333 !important; color: #333333 !important; }
+  .mobile-search-panel .close-search:hover { color: #333333 !important; background: #E0E2E4 !important; }
+  .mobile-search-panel .close-search:hover svg { stroke: #333333 !important; color: #333333 !important; }
   .navbar .zappy-products-dropdown .sub-menu,
   .navbar .zappy-products-dropdown > .sub-menu {
     display: none !important; position: static !important; max-height: 0 !important;
@@ -4139,20 +4157,6 @@ nav.navbar .sub-menu li a:hover { color: #1a2238 !important; background-color: r
   }
 }
 /* === NAVBAR STYLE OVERRIDES END === */
-/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
-@media (min-width: 769px) {
-  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-    max-height: none !important;
-    height: 42px !important;
-    max-width: 170px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
-  .nav-container {
-    min-height: 72px !important;
-  }
-}
-/* /Zappy custom logo size */
 
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
