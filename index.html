@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1004,6 +1004,21 @@ html[dir="rtl"] body {
 }
 
 </style>
+    <!-- ZAPPY_INTEGRATION_START analytics:add_facebook_pixel -->
+<!-- Facebook Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '895464629386682');
+  fbq('track', 'PageView');
+</script>
+<!-- ZAPPY_INTEGRATION_END analytics:add_facebook_pixel -->
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -1553,16 +1568,16 @@ html[dir="rtl"] body {
 </script>
   
   <main>
-    <section id="hero" class="home-hero-section" data-layout-spec="Home-Hero" data-hero-type="fullscreen-scrim">
-  <img data-hero-bg="true" class="home-hero-section__bg-image" data-placeholder="home-hero-bg-1" data-context="Bright, minimal law office interior with soft natural daylight streaming through tall windows, showing a clean modern desk with leather chair, warm wood tones, and professional yet welcoming atmosphere - shot from an angle that shows depth and spaciousness, neutral color palette with cream walls and natural wood, high-end professional photography style for luxury law firm" width="1920" height="1080" src="/assets/site-home-hero-bg-1.webp" alt="Modern law office interior with natural lighting" data-preserve-bg="0" data-i18n-alt="home_alt_109">
+    <section id="hero" class="home-hero-section" data-layout-spec="Home-Hero" data-hero-type="fullscreen-scrim" style="direction: ltr;" data-zappy-content-align="bottom-right"><style data-zappy-align-style="true">#hero > [data-zappy-align-target] { margin-top: auto !important; margin-bottom: 0 !important; margin-left: auto !important; margin-right: 0 !important; align-items: flex-end !important; justify-content: flex-end !important; } #hero > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: 0 !important; }  @media (max-width: 768px) { #hero > [data-zappy-align-target] { align-items: center !important; justify-content: center !important; margin: auto !important; } #hero > [data-zappy-align-target] > * { margin-left: auto !important; margin-right: auto !important; } }</style>
+  <img data-hero-bg="true" class="home-hero-section__bg-image zappy-editable-image" data-placeholder="home-hero-bg-1" data-context="Bright, minimal law office interior with soft natural daylight streaming through tall windows, showing a clean modern desk with leather chair, warm wood tones, and professional yet welcoming atmosphere - shot from an angle that shows depth and spaciousness, neutral color palette with cream walls and natural wood, high-end professional photography style for luxury law firm" width="1920" height="1080" src="/assets/site-home-hero-bg-1.webp" alt="Modern law office interior with natural lighting" data-preserve-bg="0" data-i18n-alt="home_alt_109" data-element-type="image" data-element-id="img-1773218173543-ipf8nvj0j" data-resize-handler-attached="true">
   <div class="home-hero-section__scrim" aria-hidden="true" id="zappy-section-1"></div>
-  <div class="home-hero-section__overlay-group" id="zappy-section-2">
+  <div class="home-hero-section__overlay-group" id="zappy-section-2" data-zappy-align-target="true">
     <div class="home-hero-section__content-card" id="zappy-section-3">
       <h1 class="home-hero-section__headline" data-i18n="home_h1_1">Empathetic, decisive family law guidance when it matters most.</h1>
       <h3 class="home-hero-section__subtitle" data-i18n="home_h3_8">Calm, discreet representation for divorce, custody, and financial agreements—clear steps, honest expectations, and a steady hand.</h3>
       <div class="home-hero-section__cta-row" id="zappy-section-4">
-        <a href="#contact" class="home-hero-section__btn-primary" data-i18n="home_link_67">Request a confidential consultation</a>
-        <a href="tel:0543951940" class="home-hero-section__btn-secondary" data-i18n="home_link_68">Call now</a>
+        <a href="#contact" class="home-hero-section__btn-primary" data-i18n="home_link_67" data-element-type="button" data-element-id="btn-1773218173541-od9boh2z4" data-native-element="true">Request a confidential consultation</a>
+        <a href="tel:0543951940" class="home-hero-section__btn-secondary" data-i18n="home_link_68" data-element-type="button" data-element-id="btn-1773218173541-bj6r0t11o" data-native-element="true">Call now</a>
       </div>
       <p class="home-hero-section__reassurance" data-i18n="home_p_26">Discreet communication • Clear next steps • Client-first approach</p>
     </div>
@@ -2043,6 +2058,8 @@ html[dir="rtl"] body {
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
@@ -3419,17 +3436,23 @@ html[dir="rtl"] body {
       el.style.removeProperty('margin-right');
     });
     
-    // Globe icon SVG for language switcher button (minimal design, no chevron)
-    // Read the icon color from the data attribute (set by server based on navbar color detection)
-    var langSwitcher = document.querySelector('.lang-switcher');
-    var iconColor = langSwitcher ? langSwitcher.getAttribute('data-icon-color') : 'currentColor';
-    if (!iconColor) iconColor = 'currentColor';
+    // Globe icon SVG - uses currentColor so it adopts whatever color is set on the button
+    var globeIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>';
     
-    var globeIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="' + iconColor + '" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>';
-    
-    // Update language switcher display - just the globe icon, no arrow
+    // Match the button color to a sibling nav link so the globe contrasts with the nav bg
     var currentLangEl = document.querySelector('.lang-switcher-current');
     if (currentLangEl) {
+      var navContainer = currentLangEl.closest('nav') || currentLangEl.closest('header') || currentLangEl.closest('.navbar');
+      if (navContainer) {
+        var navLink = navContainer.querySelector('.nav-menu a, .nav-links a');
+        if (!navLink) navLink = navContainer.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');
+        if (navLink) {
+          var linkColor = getComputedStyle(navLink).color;
+          if (linkColor && linkColor !== 'rgb(0, 0, 0)' && linkColor !== 'rgba(0, 0, 0, 0)') {
+            currentLangEl.style.color = linkColor;
+          }
+        }
+      }
       currentLangEl.innerHTML = globeIconSvg;
     }
     

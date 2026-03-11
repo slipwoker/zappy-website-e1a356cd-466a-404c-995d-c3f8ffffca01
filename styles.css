@@ -4263,6 +4263,22 @@ nav.navbar .sub-menu li a:hover { color: var(--nav-text-hover, #0891B2) !importa
 @media (max-width: 480px) { .favorites-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
 /* ========== END PRODUCT ICON STYLES ========== */
 
+/* ========== ORPHANED_ZOOM_IMG_FIX ========== */
+@media (max-width: 768px) {
+  .zappy-preserve-css-grid > img[data-zappy-zoom],
+  [class*="-grid"] > img[data-zappy-zoom] {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 300px !important;
+    object-fit: cover !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}
+/* ========== END ORPHANED_ZOOM_IMG_FIX ========== */
+
 
 /* ========== GRID RESPONSIVE FIX (zappy-grid-mobile-fix) ========== */
 /* Ensures grids with explicit columns use CSS variable and are responsive on mobile */
