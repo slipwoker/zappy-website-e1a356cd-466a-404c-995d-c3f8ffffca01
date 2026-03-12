@@ -5,21 +5,21 @@
 ## Pages
 
 ### Home
-https://maors-lawfirm.zappy5.app
+https://example.com
 Navigate family matters with a trusted family law attorney who combines legal expertise with empathy. Maors Lawfirm provides calm, professional guidance when you need it most.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://maors-lawfirm.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://maors-lawfirm.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://maors-lawfirm.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -31,5 +31,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://maors-lawfirm.zappy5.app/sitemap.xml
-- **Robots.txt**: https://maors-lawfirm.zappy5.app/robots.txt
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
